@@ -9,9 +9,9 @@ for x in "banana":
 
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
-  print(x)
-  if x == "banana":
-    break
+    print(x)
+    if  x == "banana":
+      break
   
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
