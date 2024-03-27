@@ -20,15 +20,16 @@ def delete_microseconds():
     print(f'Withoud microseconds {without_microseconds}')
 
 #ex4
-def seconds_dif(date1_str, date2_str):
-    date_format = '%Y-%m-%d'
+from datetime import datetime
 
-    date1 = datetime.datetime.strptime(date1_str, date_format)
-    date2 = datetime.datetime.strptime(date2_str, date_format)
-
-    difference = date2 - date1
-
-    return difference.total_seconds()
+def seconds_difference(date1, date2):
+    
+    datetime1 = datetime.strptime(date1, "%Y-%m-%d %H:%M:%S")
+    datetime2 = datetime.strptime(date2, "%Y-%m-%d %H:%M:%S")
+    
+    difference = (datetime2 - datetime1).total_seconds()
+    
+    return difference
 
 
 

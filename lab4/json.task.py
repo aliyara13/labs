@@ -7,7 +7,7 @@ print("-------------------------------------------------- -------------------- -
 
 with open("data.json", "r") as obj:
     data = json.load(obj)
-    for object in data['imdata']:
+    for object in data['imdata']:#дата словарь #из списка достаю нужные значения
         dn = object['l1PhysIf']['attributes']['dn']
         descr = object['l1PhysIf']['attributes']['descr']
         speed = object['l1PhysIf']['attributes']['speed']

@@ -2,7 +2,7 @@ import re
 
 
 def task1():
-    #Write a Python program that matches a string that has an 'a' followed by zero or more 'b''s.
+    
     
     pattern = re.compile(r'ab*')
     
@@ -13,7 +13,7 @@ def task1():
 
 
 def task2():
-    #Write a Python program that matches a string that has an 'a' followed by two to three 'b'.
+    
     
     pattern = re.compile(r'ab{2,3}')
 
@@ -24,7 +24,7 @@ def task2():
 
 def task3():
     
-    #Write a Python program to find sequences of lowercase letters joined with a underscore.
+  
     
 
     pattern = re.compile(r'[a-z]+\_')
@@ -36,7 +36,7 @@ def task3():
     
 def task4():
     
-    #Write a Python program to find the sequences of one upper case letter followed by lower case letters.
+    
     
 
     pattern = re.compile(r'[A-Z]{1}[a-z]+')
@@ -47,7 +47,6 @@ def task4():
 
 def task5():
     
-   # Write a Python program that matches a string that has an 'a' followed by anything, ending in 'b'.
     
 
     pattern = re.compile(r'a.+b\Z')
@@ -58,7 +57,7 @@ def task5():
 
 def task6():
     
-    #Write a Python program to replace all occurrences of space, comma, or dot with a colon.
+    
     
 
     pattern = re.compile(r'[ ,.]')
@@ -70,7 +69,6 @@ def task6():
 
 def task7():
     
-    #Write a python program to convert snake case string to camel case string.
     
     def snake_to_camel(snake_case):
         return re.sub(r"_([a-z])", lambda s: s.group(1).upper(), snake_case)
@@ -82,15 +80,17 @@ def task7():
 
     print(camelCase)
 
+#hello_world",  "helloWorld".
+
 def task8():
-    #Write a Python program to split a string at uppercase letters.
-    
 
     text = input()
 
 
     print(re.sub(r'([A-Z])', lambda s: ' '+s.group(1), text).lstrip())
+#snakeCase.
 
+#snake case 
 
 def task9():
     
@@ -115,3 +115,6 @@ def task10():
     snakeCase = camelToSnake(camelCase)
 
     print(snakeCase)
+#snakeCase.
+
+#snake_case 

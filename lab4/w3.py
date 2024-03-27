@@ -195,7 +195,7 @@ import mymodule
 import mymodule as mx
 
 #ex3
-import mymodule
+
 
 print(dir(mymodule))
 
