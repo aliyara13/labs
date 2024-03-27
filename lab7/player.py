@@ -18,7 +18,7 @@ pygame.mixer.music.load(music_files[current_track])
 
 font = pygame.font.Font(None, 24)
 
-kaif = pygame.image.load("../kaif.jpg")
+kaif = pygame.image.load("./kaif.jpg")
 
 kaif = pygame.transform.scale(kaif, (200, 200))
 
